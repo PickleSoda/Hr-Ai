@@ -127,14 +127,6 @@ const routes = [
   },
   {
     meta: {
-      title: "Candidates",
-    },
-    path: "/candidates",
-    name: "candidates",
-    component: () => import("@/views/CandidatesView.vue"),
-  },
-  {
-    meta: {
       title: "Chat",
     },
     path: "/chat/:id", // Define a dynamic parameter :id in the route path
