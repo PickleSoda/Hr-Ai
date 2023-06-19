@@ -144,7 +144,8 @@ const routes = [
   },
 ];
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory("/"),
+  base: "/",
   routes,
   scrollBehavior(to, from, savedPosition) {
     return savedPosition || { top: 0 };

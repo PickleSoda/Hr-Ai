@@ -13,12 +13,14 @@ const jiraAnalysis = computed(() => mainStore.jiraAnalysis);
 <template>
   <LayoutAuthenticated>
     <SectionMain>
-      
-      <SectionTitleLineWithButton :icon="mdiAccountMultiple" title="Jira Analysis" />
+      <SectionTitleLineWithButton
+        :icon="mdiAccountMultiple"
+        title="Jira Analysis"
+      />
       <div class="grid grid-cols-1 gap-6 mb-6">
         <div class="flex flex-col justify-between">
           <CardBoxJira
-            v-for="(client) in jiraAnalysis"
+            v-for="client in jiraAnalysis"
             :key="client.id"
             :name="client.username"
             :project="client.project_id"
@@ -26,7 +28,6 @@ const jiraAnalysis = computed(() => mainStore.jiraAnalysis);
           />
         </div>
       </div>
-
     </SectionMain>
   </LayoutAuthenticated>
 </template>

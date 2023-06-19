@@ -13,7 +13,10 @@ const emailAnalysis = computed(() => mainStore.emailAnalysis);
 <template>
   <LayoutAuthenticated>
     <SectionMain>
-      <SectionTitleLineWithButton :icon="mdiAccountMultiple" title="Email analysis" />
+      <SectionTitleLineWithButton
+        :icon="mdiAccountMultiple"
+        title="Email analysis"
+      />
       <div class="grid grid-cols-1 gap-6 mb-6">
         <div class="flex flex-col justify-between">
           <CardBoxEmail

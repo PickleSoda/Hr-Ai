@@ -40,7 +40,6 @@ const emailAnalysis = computed(() => mainStore.emailAnalysis.slice(0, 4));
 
 const jiraAnalysis = computed(() => mainStore.jiraAnalysis.slice(0, 4));
 
-
 // console.log(emailAnalysis.value)
 const telegramAnalysis = computed(() => mainStore.telegramAnalysis);
 
@@ -114,7 +113,6 @@ const filteredChartData = computed(() => {
         />
       </div>
 
-
       <SectionTitleLineWithButton
         :icon="mdiChartPie"
         title="Telegram Chat analysis"
@@ -145,11 +143,14 @@ const filteredChartData = computed(() => {
         </div>
       </CardBox>
 
-      <SectionTitleLineWithButton :icon="mdiAccountMultiple" title="Jira Analysis" />
+      <SectionTitleLineWithButton
+        :icon="mdiAccountMultiple"
+        title="Jira Analysis"
+      />
       <div class="grid grid-cols-1 gap-6 mb-6">
         <div class="flex flex-col justify-between">
           <CardBoxJira
-            v-for="(client) in jiraAnalysis"
+            v-for="client in jiraAnalysis"
             :key="client.id"
             :name="client.username"
             :project="client.project_id"
@@ -158,8 +159,10 @@ const filteredChartData = computed(() => {
         </div>
       </div>
 
-
-      <SectionTitleLineWithButton :icon="mdiAccountMultiple" title="Email analysis" />
+      <SectionTitleLineWithButton
+        :icon="mdiAccountMultiple"
+        title="Email analysis"
+      />
       <div class="grid grid-cols-1 gap-6 mb-6">
         <div class="flex flex-col justify-between">
           <CardBoxEmail
@@ -173,7 +176,6 @@ const filteredChartData = computed(() => {
       </div>
 
       <SectionBannerStarOnGitHub class="mt-6 mb-6" />
-
     </SectionMain>
   </LayoutAuthenticated>
 </template>

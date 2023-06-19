@@ -23,7 +23,7 @@ const candidatesBarItems = computed(() => mainStore.candidates);
         <CardBoxCandidates
           v-for="client in candidatesBarItems"
           :key="client.requirement_id"
-          :requirementId="client.requirement_id"
+          :requirement-id="client.requirement_id"
           :name="client.owner_name"
           :email="client.owner_email"
           :path="client.path"
