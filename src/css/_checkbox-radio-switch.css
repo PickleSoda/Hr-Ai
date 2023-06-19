@@ -12,7 +12,7 @@
   }
 
   .checkbox input[type=checkbox]:focus+.check, .radio input[type=radio]:focus+.check, .switch input[type=checkbox]:focus+.check {
-    @apply ring ring-blue-700;
+    @apply ring ring-gray-700;
   }
 
   .checkbox input[type=checkbox]+.check, .radio input[type=radio]+.check {
@@ -32,7 +32,7 @@
   }
 
   .checkbox input[type=checkbox]:checked+.check, .radio input[type=radio]:checked+.check {
-    @apply bg-no-repeat bg-center border-4;
+    @apply bg-no-repeat bg-center border-2;
   }
 
   .checkbox input[type=checkbox]:checked+.check {
@@ -44,7 +44,7 @@
   }
 
   .switch input[type=checkbox]:checked+.check, .checkbox input[type=checkbox]:checked+.check, .radio input[type=radio]:checked+.check {
-    @apply bg-blue-600 border-blue-600;
+    @apply bg-gray-600 border-gray-600;
   }
 
   .switch input[type=checkbox]+.check:before {

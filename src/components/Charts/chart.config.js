@@ -1,24 +1,14 @@
 export const chartColors = {
   default: {
-    primary: "#00D1B2",
-    info: "#209CEE",
-    danger: "#FF3860",
+    EmotionalTone: "#209CEE",
+    Negative: "#800080",
+    Problem: "#FF3860",
+    Positive: "#00D1B2",
   },
 };
-
-const randomChartData = (n) => {
-  const data = [];
-
-  for (let i = 0; i < n; i++) {
-    data.push(Math.round(Math.random() * 200));
-  }
-
-  return data;
-};
-
 const datasetObject = (color, points) => {
   return {
-    fill: false,
+    fill: true,
     borderColor: chartColors.default[color],
     borderWidth: 2,
     borderDash: [],
@@ -30,25 +20,24 @@ const datasetObject = (color, points) => {
     pointHoverRadius: 4,
     pointHoverBorderWidth: 15,
     pointRadius: 4,
-    data: randomChartData(points),
+    data: points,
     tension: 0.5,
     cubicInterpolationMode: "default",
+    label: color,
   };
 };
 
-export const sampleChartData = (points = 9) => {
-  const labels = [];
-
-  for (let i = 1; i <= points; i++) {
-    labels.push(`0${i}`);
-  }
+export const sampleChartData = (analysis) => {
+  // console.log(analysis)
+  const labels = analysis.date.map((date) => date.split(" ")[1]);
 
   return {
     labels,
     datasets: [
-      datasetObject("primary", points),
-      datasetObject("info", points),
-      datasetObject("danger", points),
+      datasetObject("EmotionalTone", analysis["Emotional Tone"]),
+      datasetObject("Negative", analysis.Negative),
+      datasetObject("Problem", analysis.Problem),
+      datasetObject("Positive", analysis.Positive),
     ],
   };
 };

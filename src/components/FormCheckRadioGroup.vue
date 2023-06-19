@@ -50,8 +50,14 @@ const computedValue = computed({
       :name="name"
       :input-value="key"
       :label="value"
-      :class="componentClass"
-      class="mr-6 mb-3 last:mr-0"
+      class="mr-6 mb-3 last:mr-0 py-1 px-2 rounded-lg"
+      :class="{
+        componentClass,
+        'bg-blue-700 text-white': value === 'Emotional Tone',
+        'bg-purple-700 text-white': value === 'Negative',
+        'bg-red-700 text-white': value === 'Problem',
+        'bg-green-600 text-white': value === 'Positive',
+      }"
     />
   </div>
 </template>

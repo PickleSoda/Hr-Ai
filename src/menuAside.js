@@ -1,16 +1,14 @@
 import {
-  mdiAccountCircle,
+  // mdiAccountCircle,
   mdiMonitor,
-  mdiGithub,
-  mdiLock,
-  mdiAlertCircle,
+  // mdiLock,
+  // mdiAlertCircle,
   mdiSquareEditOutline,
   mdiTable,
   mdiViewList,
-  mdiTelevisionGuide,
-  mdiResponsive,
-  mdiPalette,
-  mdiReact,
+  // mdiTelevisionGuide,
+  // mdiResponsive,
+  // mdiPalette,
 } from "@mdi/js";
 
 export default [
@@ -19,68 +17,92 @@ export default [
     icon: mdiMonitor,
     label: "Dashboard",
   },
+  // {
+  //   to: "/tables",
+  //   label: "Tables",
+  //   icon: mdiTable,
+  // // },
+  // {
+  //   to: "/forms",
+  //   label: "Forms",
+  //   icon: mdiSquareEditOutline,
+  // },
   {
-    to: "/tables",
-    label: "Tables",
+    to: "/emailAnalysis",
+    label: "Email Analysis",
     icon: mdiTable,
   },
   {
-    to: "/forms",
-    label: "Forms",
+    to: "/jiraAnalysis",
+    label: "Jira Analysis",
+    icon: mdiTable,
+  },
+  {
+    to: "/candidatesListing",
+    label: "Candidates",
+    icon: mdiTable,
+  },
+  {
+    to: "/resumeUpload",
+    label: "Upload Resume",
     icon: mdiSquareEditOutline,
   },
   {
-    to: "/ui",
-    label: "UI",
-    icon: mdiTelevisionGuide,
-  },
-  {
-    to: "/responsive",
-    label: "Responsive",
-    icon: mdiResponsive,
-  },
-  {
-    to: "/",
-    label: "Styles",
-    icon: mdiPalette,
-  },
-  {
-    to: "/profile",
-    label: "Profile",
-    icon: mdiAccountCircle,
-  },
-  {
-    to: "/login",
-    label: "Login",
-    icon: mdiLock,
-  },
-  {
-    to: "/error",
-    label: "Error",
-    icon: mdiAlertCircle,
-  },
-  {
-    label: "Dropdown",
+    label: "Requirements",
     icon: mdiViewList,
     menu: [
       {
-        label: "Item One",
+        to: "/requirement",
+        label: "Add",
       },
       {
-        label: "Item Two",
+        to: "/requirementListing",
+        label: "Listing",
       },
     ],
   },
-  {
-    href: "https://github.com/justboil/admin-one-vue-tailwind",
-    label: "GitHub",
-    icon: mdiGithub,
-    target: "_blank",
-  },
-  {
-    href: "https://github.com/justboil/admin-one-react-tailwind",
-    label: "React version",
-    icon: mdiReact,
-    target: "_blank",
-  },
+  // {
+  //   to: "/ui",
+  //   label: "UI",
+  //   icon: mdiTelevisionGuide,
+  // },
+  // {
+  //   to: "/responsive",
+  //   label: "Responsive",
+  //   icon: mdiResponsive,
+  // },
+  // {
+  //   to: "/",
+  //   label: "Styles",
+  //   icon: mdiPalette,
+  // },
+  // {
+  //   to: "/profile",
+  //   label: "Profile",
+  //   icon: mdiAccountCircle,
+  // },
+  // {
+  //   to: "/login",
+  //   label: "Login",
+  //   icon: mdiLock,
+  // },
+  // {
+  //   to: "/error",
+  //   label: "Error",
+  //   icon: mdiAlertCircle,
+  // },
+  // {
+  //   label: "Requirements",
+  //   icon: mdiViewList,
+  //   menu: [
+  //     {
+  //       to: "",
+  //       label: "Add",
+  //     },
+  //     {
+  //       to: "",
+  //       label: "Listing",
+  //     },
+  //   ],
+  // },
 ];

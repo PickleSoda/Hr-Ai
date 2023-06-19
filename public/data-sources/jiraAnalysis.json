@@ -1,0 +1,28 @@
+{
+    "data":[
+            {
+                "analysis": {
+                    "Adaptability": 5,
+                    "Communication": 7,
+                    "Initiative": 4,
+                    "Productivity": 6
+                },
+                "id": 1,
+                "project_id": "10000",
+                "user_id": "63933fec8fd2d2d5f132e72d",
+                "username": "achiugulava"
+            },
+            {
+                "analysis": {
+                    "Adaptability": 6,
+                    "Communication": 7,
+                    "Initiative": 4,
+                    "Productivity": 5
+                },
+                "id": 2,
+                "project_id": "10000",
+                "user_id": "626068139506d6006fd9d7e4",
+                "username": "Dimitri Zhorzholiani"
+            }
+         ]
+}

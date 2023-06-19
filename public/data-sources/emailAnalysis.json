@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "Analysis": {
+                "Emotional Tone": 7,
+                "Negative": 8,
+                "Positive": 4,
+                "Problem": 10
+            },
+            "Date": "2023-06-17 17:48:33",
+            "Sender": "Achi ugulava <achiugulava@gmail.com>"
+        },
+        {
+            "Analysis": {
+                "Emotional Tone": 9,
+                "Negative": 0,
+                "Positive": 10,
+                "Problem": 0
+            },
+            "Date": "2023-06-18 16:53:24",
+            "Sender": "Achi ugulava <achiugulava@gmail.com>"
+        }
+     ]
+     
+}

@@ -6,14 +6,21 @@ export const useMainStore = defineStore("main", {
     /* User */
     userName: null,
     userEmail: null,
+    userToken: null,
     userAvatar: null,
 
     /* Field focus with ctrl+k (to register only once) */
     isFieldFocusRegistered: false,
 
     /* Sample data (commonly used) */
+    candidates: [],
     clients: [],
     history: [],
+    requirements: [],
+    questions: [],
+    telegramAnalysis: {},
+    jiraAnalysis: [],
+    emailAnalysis: [],
   }),
   actions: {
     setUser(payload) {
@@ -26,8 +33,13 @@ export const useMainStore = defineStore("main", {
       if (payload.avatar) {
         this.userAvatar = payload.avatar;
       }
+      if (payload.token) {
+        this.userToken = payload.token;
+      }
     },
-
+    setQuestions(questions) {
+      this.questions = questions;
+    },
     fetch(sampleDataKey) {
       axios
         .get(`data-sources/${sampleDataKey}.json`)

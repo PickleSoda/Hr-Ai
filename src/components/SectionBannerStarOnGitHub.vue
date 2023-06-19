@@ -12,7 +12,7 @@ import { gradientBgPinkRed } from "@/colors";
     </h1>
     <div>
       <BaseButton
-        href="https://github.com/justboil/admin-one-vue-tailwind"
+        href="https://github.com/AchiUgulava/Hr-Ai"
         :icon="mdiGithub"
         label="GitHub"
         target="_blank"

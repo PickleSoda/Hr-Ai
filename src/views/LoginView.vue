@@ -10,17 +10,49 @@ import FormControl from "@/components/FormControl.vue";
 import BaseButton from "@/components/BaseButton.vue";
 import BaseButtons from "@/components/BaseButtons.vue";
 import LayoutGuest from "@/layouts/LayoutGuest.vue";
-
+import axios from "axios";
+import { useMainStore } from "@/stores/main";
 const form = reactive({
-  login: "john.doe",
-  pass: "highly-secure-password-fYjUw-",
+  login: "user1",
+  pass: "password1",
   remember: true,
 });
 
 const router = useRouter();
 
-const submit = () => {
-  router.push("/dashboard");
+const submit = async () => {
+  try {
+    const username = form.login;
+    const password = form.pass;
+    const token = mainStore.userToken;
+    const mainStore = useMainStore();
+
+    const response = await axios.post(
+      "http://192.168.243.67:5000/creds",
+      {
+        user: username,
+        password: password,
+      },
+      {
+        headers: {
+          Authorization: token,
+        },
+      }
+    );
+
+    // Handle the response if needed
+    console.log(response.data);
+    mainStore.setUser({
+      name: username,
+      email: password,
+      token: response.data.creds,
+    });
+    // Redirect to the dashboard
+    router.push("/dashboard");
+  } catch (error) {
+    // Handle any errors
+    console.error(error);
+  }
 };
 </script>
 

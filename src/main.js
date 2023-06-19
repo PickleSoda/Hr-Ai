@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
-
+// import { axios } from "axios";
 import App from "./App.vue";
 import router from "./router";
 import { useMainStore } from "@/stores/main.js";
@@ -22,7 +22,32 @@ const styleStore = useStyleStore(pinia);
 /* Fetch sample data */
 mainStore.fetch("clients");
 mainStore.fetch("history");
-
+mainStore.fetch("requirements");
+mainStore.fetch("candidates");
+mainStore.fetch("telegramAnalysis");
+mainStore.fetch("jiraAnalysis");
+mainStore.fetch("emailAnalysis");
+const initialQuestions = [
+  { id: "id1", question: "Some question 1" },
+  { id: "id2", question: "Some question 2" },
+  // Add more questions as needed
+];
+mainStore.setQuestions(initialQuestions);
+// axios.post("http://192.168.243.67:5000/requirementFetch",{
+//   headers: {
+//     Authorization: token,
+//   },
+// })
+//   .then((response) => {
+//     console.log(response.data);
+//     if (response.data) {
+//       mainStore.requirements = response.data;
+//     }
+//   })
+//   .catch((error) => {
+//     // Handle the error
+//     console.error(error);
+//   });
 /* App style */
 styleStore.setStyle(localStorage[styleKey] ?? "basic");
 

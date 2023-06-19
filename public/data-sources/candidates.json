@@ -1,0 +1,50 @@
+{
+    "data": [
+    {
+        "id": 1,
+        "owner_email": "trusvas@gmail.com",
+        "owner_name": "Vasily Trus",
+        "path": "data/pdfs/1.pdf",
+        "requirement_id": 1,
+        "summary": "Experienced Java Software Engineer with 4-5 years of expertise in developing, testing, and deploying Java-based applications. Skilled in Agile methodologies, Scrum, and Kanban. Proficient in problem-solving, troubleshooting, and debugging complex issues. Strong communicator and collaborator. Experienced in optimizing monolithic services and designing highly available and scalable architectures. Also familiar with cloud services such as AWS and tools like GitLab and CircleCI."
+    },
+    {
+        "id": 2,
+        "owner_email": "shubhratag1234@gmail.com",
+        "owner_name": "Shubhrat Agrawal",
+        "path": "data/pdfs/4.pdf",
+        "requirement_id": 1,
+        "summary": "Shubhrat Agrawal is a Software Development Engineer with a Bachelor of Technology in ECE from IIT Roorkee. He has experience as a Software Developer Engineer at OLA ELECTRIC, where he worked on developing an application deployment software and VPN tunnels for data transfer. Shubhrat has also completed a Full-Stack Development Internship at Besseggen Infotech, where he developed an IOS utility to recognize text and extract images from a PDF file. He is skilled in Competitive Programming, Software Development, Finance, Python Flask, Django, Git & Github, Grafana, C++, PostgreSQL, AWS, Docker, Kubernetes, Terraform, AZURE, ReactJS, Golang, Prometheus."
+    },
+    {
+        "id": 3,
+        "owner_email": "trusvas@gmail.com",
+        "owner_name": "Vasily Trus",
+        "path": "data/pdfs/1.pdf",
+        "requirement_id": 1,
+        "summary": "Experienced Java Software Engineer with 4-5 years of expertise in developing, testing, and deploying Java-based applications. Skilled in Agile methodologies, Scrum, and Kanban. Proficient in problem-solving, troubleshooting, and debugging complex issues. Strong communicator and collaborator. Experienced in optimizing monolithic services and designing highly available and scalable architectures. Also familiar with cloud services such as AWS and tools like GitLab and CircleCI."
+    },
+    {
+        "id": 4,
+        "owner_email": "shubhratag1234@gmail.com",
+        "owner_name": "Shubhrat Agrawal",
+        "path": "data/pdfs/4.pdf",
+        "requirement_id": 1,
+        "summary": "Shubhrat Agrawal is a Software Development Engineer with a Bachelor of Technology in ECE from IIT Roorkee. He has experience as a Software Developer Engineer at OLA ELECTRIC, where he worked on developing an application deployment software and VPN tunnels for data transfer. Shubhrat has also completed a Full-Stack Development Internship at Besseggen Infotech, where he developed an IOS utility to recognize text and extract images from a PDF file. He is skilled in Competitive Programming, Software Development, Finance, Python Flask, Django, Git & Github, Grafana, C++, PostgreSQL, AWS, Docker, Kubernetes, Terraform, AZURE, ReactJS, Golang, Prometheus."
+    },   {
+        "id": 5,
+        "owner_email": "trusvas@gmail.com",
+        "owner_name": "Vasily Trus",
+        "path": "data/pdfs/1.pdf",
+        "requirement_id": 1,
+        "summary": "Experienced Java Software Engineer with 4-5 years of expertise in developing, testing, and deploying Java-based applications. Skilled in Agile methodologies, Scrum, and Kanban. Proficient in problem-solving, troubleshooting, and debugging complex issues. Strong communicator and collaborator. Experienced in optimizing monolithic services and designing highly available and scalable architectures. Also familiar with cloud services such as AWS and tools like GitLab and CircleCI."
+    },
+    {
+        "id": 6,
+        "owner_email": "shubhratag1234@gmail.com",
+        "owner_name": "Shubhrat Agrawal",
+        "path": "data/pdfs/4.pdf",
+        "requirement_id": 1,
+        "summary": "Shubhrat Agrawal is a Software Development Engineer with a Bachelor of Technology in ECE from IIT Roorkee. He has experience as a Software Developer Engineer at OLA ELECTRIC, where he worked on developing an application deployment software and VPN tunnels for data transfer. Shubhrat has also completed a Full-Stack Development Internship at Besseggen Infotech, where he developed an IOS utility to recognize text and extract images from a PDF file. He is skilled in Competitive Programming, Software Development, Finance, Python Flask, Django, Git & Github, Grafana, C++, PostgreSQL, AWS, Docker, Kubernetes, Terraform, AZURE, ReactJS, Golang, Prometheus."
+    }
+]}

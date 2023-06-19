@@ -39,7 +39,7 @@ onMounted(() => {
       maintainAspectRatio: false,
       scales: {
         y: {
-          display: false,
+          display: true,
         },
         x: {
           display: true,
